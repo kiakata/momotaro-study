@@ -51,6 +51,9 @@ img {
   border-radius: 50%;
 }
 
+.message-container {
+}
+
 /* momotaro */
 .momotaro {
   background-color: rgba(255, 192, 203, 0.5);
