@@ -4,7 +4,8 @@
 body {
   magin: 0;
   font-size: 14px;
-  font-family: Verdana, sans-serif;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+
   color: #333;
 }
 
