@@ -1,0 +1,15 @@
+@charset "utg-8";
+
+
+.main {
+  background-color: rgba(255, 192, 203, 0.7);
+}
+
+#photo {
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
