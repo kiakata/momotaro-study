@@ -4,7 +4,7 @@
 body {
   magin: 0;
   font-size: 14px;
-  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
+  font-family: 'Osaka-Momo', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   color: #333;
 }
 
@@ -29,10 +29,11 @@ img {
 }
 
 #message {
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: pink;
   color: white;
-  border-radius: 50%;
+  border-radius: 10px;
+  letter-spacing: 2px;
 }
 
 /* ////////////　momotaro ////////////　*/
@@ -48,6 +49,18 @@ img {
 .user {
   background-color: white;
   border-radius: 10px;
+  box-shadow: 2px 2px 4px gray;
+  padding: 12px 5px;
+  margin-bottom: 16px;
+}
+
+.info {
+  font-size: 1.1rem;
+}
+
+.nn, .goal, .limit, .wanted {
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .user img {
@@ -55,5 +68,17 @@ img {
   width: 80px;
   border-radius: 50%;
   border: 10px solid pink;
-  margin: 5px auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+.zoomIn img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoomIn:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
