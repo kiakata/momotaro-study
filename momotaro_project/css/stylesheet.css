@@ -1,46 +1,29 @@
 @charset "utf-8";
+/* //////////// common //////////// */
 
-/* common */
 body {
   magin: 0;
   font-size: 14px;
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
-
+  font-family: 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
   color: #333;
 }
 
-a {
-  text-decoration: none;
-}
-
-/* p {
-  line-height: 2;
-} */
-
-/* header */
-header .container {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-nav {
-  margin-bottom: 10px;
-}
-
-
-
-#menu {
-  float: right;
-}
-
-
-
-/* main */
-/* top-wrapper */
-.top-wrapper {
+.bg-color-brand-grey {
   background-color: rgba(128, 128, 128, 0.1);
 }
+
+.bg-color-brand-pink-light {
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
+/* //////////// header //////////// */
+
+nav {
+  margin: 10px 0;
+}
+
+/* //////////// main //////////// */
+
 img {
   width: 100%;
 }
@@ -52,28 +35,20 @@ img {
   border-radius: 50%;
 }
 
-.message-container {
-}
+/* ////////////　momotaro ////////////　*/
 
-/* momotaro */
-.momotaro {
-  background-color: rgba(255, 192, 203, 0.5);
-}
-
-.momotaro > h2 {
+.momotaro>h2 {
   letter-spacing: 18px;
 }
 
-.momotaro p{
+.momotaro p {
   line-height: 1;
 }
-
 
 .user {
   background-color: white;
   border-radius: 10px;
 }
-
 
 .user img {
   height: 80px;
@@ -81,5 +56,4 @@ img {
   border-radius: 50%;
   border: 10px solid pink;
   margin: 5px auto;
-
 }
