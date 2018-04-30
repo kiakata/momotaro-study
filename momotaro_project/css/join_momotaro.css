@@ -1,8 +1,7 @@
 @charset "utg-8";
 
-.main {
-  background-color: #e6ecf0;
-
+main {
+  background-color: rgba(255, 192, 203, 0.3);
 }
 
 #name {
@@ -16,12 +15,11 @@
   letter-spacing: 1.2px;
 }
 
-#suggest>p {
-  background: linear-gradient(transparent 10%, rgb(255, 170, 170) 100%);
-
+p>span {
+  background: linear-gradient(transparent 60%, rgba(255, 170, 170, 0.7) 100%);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-
-
 
 #photo {
   width:100px;

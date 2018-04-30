@@ -7,12 +7,49 @@
 
   <!-- meta tag - title, keywords, description, author -->
   <title>桃太郎スタディ</title>
+  <meta name="keywords" content="勉強,桃太郎,目標達成,コミュニケーション">
+  <meta name="description" content="勉強を始める今、コミュニケーションをとる仲間を集めよう！">
+  <meta name="author" content="Takaaki Uno">
 
   <!-- favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-36×36.png" sizes="36x36">
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-48×48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-72×72.png" sizes="72x72">
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-96×96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-144×144.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="img/favicon.ico/android-icon-192×192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-57×57.png" sizes="57x57">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-60×60.png" sizes="60x60">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-72×72.png" sizes="72x72">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-76×76.png" sizes="76x76">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-114×114.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-120×120.png" sizes="120x120">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-144×144.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-152×152.png" sizes="152x152">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-180×180.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon-precomposed.png">
+  <link rel="icon" type="image/png" href="img/favicon.ico/apple-icon.png">
+  <link rel="icon" type="image/png" href="img/favicon.ico/favicon-16×16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/favicon.ico/favicon-32×32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicon.ico/favicon-96×96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/favicon.ico/favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon.ico/ms-icon-70×70.png" sizes="70x70">
+  <link rel="icon" type="image/png" href="img/favicon.ico/ms-icon-144×144.png" sizes="144x144">
+  <link rel="icon" type="image/png" href="img/favicon.ico/ms-icon-150×150.png" sizes="150x150">
+  <link rel="icon" type="image/png" href="img/favicon.ico/ms-icon-310×310.png" sizes="310x310">
 
+  <!-- TODO: add  content-->
   <!-- twitter card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="桃太郎スタディ">
+  <meta property="og:description" content="勉強を始める今、仲間を集めよう！コミュニケーションを取りながら勉強すれば、目標達成率は上がるかも。">
+  <meta property="og:image" content="画像のURL">
 
   <!-- facebook ogp -->
+  <meta property="fb:app_id" content="App ID" />
+  <meta property="article:publisher" content="FacebookページのURL" />
 
   <!-- Let browser know website is optimized for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +58,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <!-- css -->
-  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/join_momotaro.css">
 
 
@@ -55,56 +92,56 @@
   </header>
 
   <!-- main -->
-    <div class="main py-5 mb-5">
-      <div class="main-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-4 mt-sm-5">
-              <img src="img/IMG_4454.jpg" id="photo" alt="" class="mb-3">
-              <p id="name" class="text-center">桃太郎: 20代</p>
+  <main class="py-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 mt-sm-5">
+          <img src="img/IMG_4454.jpg" id="photo" alt="アイコン画像" class="mb-3">
+          <p id="name" class="text-center">桃太郎: 20代</p>
+        </div>
+
+        <div class="col-12 col-sm-7 ml-sm-3 bg-white py-3">
+          <form>
+            <div class="form-group">
+              <label for="goal">目標</label>
+              <textarea id="goal" class="form-control" placeholder="" cols="" rows="2"></textarea>
             </div>
 
-            <div class="col-12 col-sm-7 ml-sm-3 bg-white py-3">
-              <form>
-                <div class="form-group">
-                  <label for="goal">目標</label>
-                  <input type="text" class="form-control" id="goal" placeholder="">
-                </div>
-                <div class="form-group">
-                  <label for="reason">理由</label>
-                  <input type="text" class="form-control" id="reason" placeholder="なぜ始めるのか？">
-                </div>
-                <div class="form-group">
-                  <label for="limit">期限</label>
-                  <input type="text" class="form-control" id="limit" placeholder="2018年10月">
-                </div>
-                <div class="form-group mb-4">
-                  <label for="free">自由記入欄</label>
-                  <textarea placeholder="こんな人とコミュニケーションとりたい！など、ご自由にどうぞ！" cols="" rows="8" class="form-control" id="free" ></textarea>
-                </div>
-              </form>
+            <div class="form-group">
+              <label for="reason">理由</label>
+              <input type="text" class="form-control" id="reason" placeholder="なぜ始めるのか？">
             </div>
-            <div class="container text-center my-3">
-              <button type="submit" class="btn btn-info">編集する</button>
-              <button type="submit" class="btn btn-secondary ml-2">桃太郎の登録をやめる</button>
 
+            <div class="form-group">
+              <label for="limit">期限</label>
+              <input type="text" class="form-control" id="limit" placeholder="2018年10月">
             </div>
-          </div>
+
+            <div class="form-group mb-4">
+              <label for="free">自由記入欄</label>
+              <textarea placeholder="自己紹介や、こんな人とコミュニケーションとりたい！など" cols="" rows="8" class="form-control" id="free"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <div class="container text-center my-3">
+          <button type="submit" class="btn btn-info">編集する</button>
+          <button type="submit" class="btn btn-secondary ml-2">桃太郎の登録をやめる</button>
         </div>
 
       </div>
-
     </div>
-    <!-- footer -->
-    <footer class="container">
-      <ul class="footer__nav">
-        <li>ログイン</li>
-        <li>よくある質問</li>
-        <li>利用規約</li>
-        <li>プライボリシーポリシー</li>
-        <li>お問い合わせ</li>
-      </ul>
-    </footer>
+  </main>
+  <!-- footer -->
+  <footer class="container">
+    <ul class="footer__nav">
+      <li>ログイン</li>
+      <li>よくある質問</li>
+      <li>利用規約</li>
+      <li>プライボリシーポリシー</li>
+      <li>お問い合わせ</li>
+    </ul>
+  </footer>
 
 
     <!-- Optional JavaScript -->
