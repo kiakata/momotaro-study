@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Osaka-Momo';
+  color: #333;
+}
+
+.bg-color-brand-grey {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.bg-color-brand-pink-light {
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
+/* //////////// header //////////// */
+
+nav {
+  margin: 10px 0;
+}

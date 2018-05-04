@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.about-top {
+  background-color: rgba(255, 192, 203, 0.3);
+}
+
+.discription {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem
+}
+
+/* ////////// button //////////*/
+#atumeru, 
+#sagasu {
+  letter-spacing: 4px;
+}
+
+
+/* ////////// setumei ////////// */
+p>span {
+  background: linear-gradient(transparent 60%, rgba(255, 170, 170, 0.7) 100%);
+  font-size: 1.1rem;
+}

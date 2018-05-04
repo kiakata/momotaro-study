@@ -1,39 +1,18 @@
 @charset "utf-8";
-/* //////////// common //////////// */
-
-body {
-  magin: 0;
-  font-size: 14px;
-  font-family: 'Osaka-Momo', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Sans', 'ヒラギノ角ゴシック', YuGothic, 'Yu Gothic', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic';
-  color: #333;
-}
-
-.bg-color-brand-grey {
-  background-color: rgba(128, 128, 128, 0.1);
-}
-
-.bg-color-brand-pink-light {
-  background-color: rgba(255, 192, 203, 0.5);
-}
-
-/* //////////// header //////////// */
-
-nav {
-  margin: 10px 0;
-}
 
 /* //////////// main //////////// */
-
-img {
+.momo-img {
   width: 100%;
 }
 
 #message {
   font-size: 1.2rem;
-  background-color: pink;
-  color: white;
+  background-color: white;
+  color: black;
+  font-weight: bold;
   border-radius: 10px;
   letter-spacing: 2px;
+  z-index: ;
 }
 
 /* ////////////　momotaro ////////////　*/
@@ -58,7 +37,10 @@ img {
   font-size: 1.1rem;
 }
 
-.nn, .goal, .limit, .wanted {
+.nn,
+.goal,
+.limit,
+.reason {
   margin-bottom: 0;
   font-weight: bold;
 }
