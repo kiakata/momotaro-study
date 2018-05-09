@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+main {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Osaka-Momo';
+  color: #333;
+  box-sizing: border-box;
+  background-color: rgba(255, 192, 203, 0.3);
+
+}
+
+.chatroom {
+  padding: 10px 0;
+}
+
+.three {
+}
+
+
+.study-log {
+  background-color: white;
+}
+
+.aiu {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.chat {
+  background-color: white;
+}
+
+.profile {
+  background-color: white;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 10px solid pink;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.t-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  display: block;
+  float:right;
+}
+
+
+.tweet {
+  border: 1px solid pink;
+  border-radius: 10px;
+  background-color: white;
+  word-wrap: break-word;
+  padding: 5px;
+  margin-top: 18px;
+  display: inline-block;
+  width: 75%;
+}
+
+.chat-myself, .chat-yourself {
+}
+
+.chat-yourself {
+  text-align: right;
+  width: 75%;
+}
+
+.study-log {
+  float: right;
+}
