@@ -1,0 +1,12 @@
+{% extends 'momotaro/base.html' %}
+
+{% block content %}
+<main class="container my-5">
+<form class="" action="" method="POST">
+  {{form.as_p}}
+  <button type="submit">登録</button>
+  {% csrf_token %}
+</form>
+</main>
+
+{% endblock %}
