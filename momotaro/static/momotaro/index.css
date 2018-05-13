@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* //////////// main //////////// */
+.momo-img {
+  width: 100%;
+}
+
+#message {
+  font-size: 1.2rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+/* ////////////　momotaro ////////////　*/
+
+.momotaro>h2 {
+  letter-spacing: 18px;
+}
+
+.momotaro p {
+  line-height: 1;
+}
+
+.user {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px gray;
+  padding: 12px 5px;
+  margin-bottom: 16px;
+}
+
+.info {
+  font-size: 1.1rem;
+}
+
+.nn,
+.goal,
+.limit,
+.reason {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.user img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 10px solid pink;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+.zoomIn img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.zoomIn:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}

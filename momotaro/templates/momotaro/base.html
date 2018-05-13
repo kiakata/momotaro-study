@@ -58,8 +58,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
   <!-- css -->
-  <link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/index.css">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'momotaro/common.css' %}" />
+
 {% block extracss %}{% endblock %}
 </head>
 
@@ -67,7 +68,7 @@
   <!-- header -->
   <header class="container">
     <nav class="navbar navbar-expand-sm navbar-light">
-      <a href="#" id="logo" class="navbar-brand font-weight-bold">桃太郎スタディ</a>
+      <a href="{% url 'momotaro:index' %}" id="logo" class="navbar-brand font-weight-bold">桃太郎スタディ</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
           <span class="navbar-toggler-icon"></span>
       </button>

@@ -3,45 +3,39 @@
 {% load static %}
 {% block extracss %}<link rel="stylesheet" type="text/css" href="{% static 'momotaro/user_form.css' %}" />{% endblock %}
 
-
 {% block content %}
 <main class="my-3">
   <div class='container py-4'>
     <form class="" action="" method="POST">
-      {% csrf_token %}
-
       <table cellpadding="10" cellspacing="">
         <tr>
           <th>ニックネーム</th>
-          <td>{{form.nickname}}</td>
+          <td>{{user.nickname}}</td>
         </tr>
         <tr>
           <th>性別</th>
-          <td>{{form.gender}}</td>
+          <td>{{user.gender}}</td>
         </tr>
         <tr>
           <th>年代</th>
-          <td>{{ form.age }}</td>
+          <td>{{ user.age }}</td>
         </tr>
         <tr>
           <th>メールアドレス</th>
-          <td>{{ form.email }}</td>
+          <td>{{ user.email }}</td>
         </tr>
         <tr>
           <th>自由記入欄</th>
-          <td>{{ form.additional_comments }}</td>
-        </tr>
-        <tr>
-          <th>パスワード</th>
-          <td>{{ form.password }}</td>
+          <td>{{ user.additional_comments | linebreaksbr}}</td>
         </tr>
       </table>
 
-      {{form.accept_check}}<label for="check"><a href="#" target="_blank">利用規約</a>に同意します</label>
-      <button type="submit" id="submit" class="btn btn-danger mt-4 ml-5">登録</button>
-      {% csrf_token %}
+      <button type="button" onclick="location.href='{% url 'momotaro:user.update' user.pk %}'" class="btn btn-info">更新ページへ</button>
+      <button type="button" onclick="location.href='{% url 'momotaro:user.delete' user.pk %}'" class="btn btn-danger">削除ページへ</button>
+
     </form>
   </div>
 </main>
+
 
 {% endblock %}

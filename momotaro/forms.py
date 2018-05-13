@@ -3,9 +3,10 @@ from .models import User
 from .models import Momotaro
 
 class UserCreateForm(forms.ModelForm):
+    accept_check = forms.BooleanField()
     class Meta:
         model = User
-        fields = ('nickname', 'email', 'additional_comments')
+        fields = ('nickname', 'gender', 'age','email', 'additional_comments', 'password')
 
 class MomotaroCreateForm(forms.ModelForm):
     class Meta:

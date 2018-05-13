@@ -1,0 +1,35 @@
+{% extends 'momotaro/base.html' %}
+
+{% block content %}
+<main class="container py-5">
+<h1>ユーザー一覧</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ニックネーム</th>
+      <th>年代</th>
+      <th>#</th>
+      <th>#</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in user_list %}
+    <tr>
+      <td><a href="{% url 'momotaro:user.detail' user.pk %}">{{user.nickname}}</a></td>
+      <td>{{user.age}}</td>
+      <td><a href="{% url 'momotaro:user.update' user.pk %}">更新</a></td>
+      <td><a href="{% url 'momotaro:user.delete' user.pk %}">削除</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+
+</table>
+
+
+  <!-- {% for user in user_list %}
+  <p>{{user.nickname}}</p>
+  <p>{{user.age}}</p>
+  {% endfor %} -->
+</main>
+
+{% endblock %}

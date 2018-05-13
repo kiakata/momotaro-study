@@ -1,0 +1,33 @@
+{% extends 'momotaro/base.html' %}
+
+{% block content %}
+<section class="bg-color-brand-pink-light pb-2 mb-3">
+  <div class="container">
+    <h2 class="text-center pt-5 font-weight-bold">コミュニケーションをとってくれる仲間を探してます！</h2>
+    <div class="row my-md-5 text-center">
+      <div class="col-12 col-md-6 col-lg-4  col-xl-3 my-2">
+        <div class="user zoomIn">
+          <figure>
+            <img src="img/IMG_4454.jpg" alt="アイコン画像">
+          </figure>
+          {% for momotaro in momotaro_list %}
+          <p class="nn">{{ momotaro.nickname }}</p>
+          <p class="info">{{ momotaro.gender }}</p>
+          <p class="goal">{{ momotaro.age }}</p>
+          <p class="info">{{ momotaro.limit }}</p>
+          <p class="limit">{{ momotaro. }}</p>
+          <p class="info">{{ momotaro. }}</p>
+          <p class="reason">{{ momotaro. }}</p>
+          <p class="info">pythonを使って仕事をしたい</p>
+
+          {% endfor %}
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

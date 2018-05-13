@@ -1,5 +1,9 @@
 {% extends 'momotaro/base.html' %}
 
+{% load static %}
+{% block extracss %}<link rel="stylesheet" type="text/css" href="{% static 'momotaro/index.css' %}" />{% endblock %}
+
+
 {% block content %}
 <!-- main -->
 <main>
