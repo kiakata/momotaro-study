@@ -27,6 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# 追加部分
+AUTH_USER_MODEL = 'register.User'
+
+LOGIN_URL = 'register:login'
+LOGIN_REDIRECT_URL = 'register:top'
+
+# メールをコンソールに表示する
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 # Application definition
 
@@ -38,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'momotaro',
+    'register',
 ]
 
 MIDDLEWARE = [
