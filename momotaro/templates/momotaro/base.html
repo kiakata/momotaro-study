@@ -72,7 +72,6 @@
   <!-- css -->
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'momotaro/common.css' %}" />
-
 {% block extracss %}{% endblock %}
 </head>
 
@@ -110,13 +109,20 @@
 
   <!-- footer -->
   <footer class="container">
-    <ul class="footer__nav">
-      <li>ログイン</li>
-      <li>よくある質問</li>
-      <li>利用規約</li>
-      <li>プライボリシーポリシー</li>
-      <li>お問い合わせ</li>
-    </ul>
+    <div class="row">
+      <div class="col-12 col-md-4 col-md-offset-4">
+        <a href="#">桃太郎スタディ</a>
+      </div>
+      <div class="col-12 col-md-4">
+        <ul class="footer__nav">
+          <li>ログイン</li>
+          <li>よくある質問</li>
+          <li>利用規約</li>
+          <li>プライボリシーポリシー</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
   <!-- Optional JavaScript -->

@@ -20,3 +20,8 @@ body {
 nav {
   margin: 10px 0;
 }
+
+/* //////////// footer //////////// */
+.footer__nav {
+  list-style: none;
+}
