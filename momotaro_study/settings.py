@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'momotaro',
-    'register',
+    'register.apps.RegisterConfig',
 ]
 
 MIDDLEWARE = [

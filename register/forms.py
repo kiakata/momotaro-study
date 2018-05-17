@@ -3,6 +3,7 @@ from django.contrib.auth.forms import (
     AuthenticationForm,UserCreationForm
 )
 from django.contrib.auth import get_user_model
+from .models import Momotaro
 
 
 User = get_user_model()
@@ -41,3 +42,10 @@ class UserUpdateForm(forms.ModelForm):
         for field in self.fields.values():
             field.widget.attrs['class'] = 'form-control'
 
+########## 桃太郎登録 #############
+class MomotaroCreateForm(forms.ModelForm):
+    """桃太郎登録フォーム"""
+
+    class Meta:
+        model = Momotaro
+        fields = ('goal', 'limit', 'reason', 'additional_comments')

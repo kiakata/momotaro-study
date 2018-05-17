@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 from django.contrib.auth.views import (
@@ -6,7 +6,7 @@ from django.contrib.auth.views import (
 )
 from django.views import generic
 from .forms import (
-    LoginForm, UserCreateForm, UserUpdateForm,
+    LoginForm, UserCreateForm, UserUpdateForm, MomotaroCreateForm
     )
 
 
@@ -117,3 +117,19 @@ class UserUpdate(OnlyYouMixin, generic.UpdateView):
 
     def get_success_url(self):
         return resolve_url('register:user_detail', pk=self.kwargs['pk'])
+
+def momotaro_create(request, pk):
+    user = User.object.get(id=pk)
+
+    # 送信内容をもとにフォームを作る。POSTでなければからのフォーム
+    form = MomotaroCreateForm(request.POST or None)
+    template_name = 'register/momotaro_form.html'
+    # method=POST,つまり送信ボタン押下時、入力内容に誤りがなければ
+    if request.method == 'POST' and form.is_valid():
+        form.save()
+        return redirect('register:index')
+    # 通常時のページアクセスや、入力内容に誤りがあれば、またページを表示
+    content = {
+    'form': form
+    }
+    return render(request, 'register/momotaro_form.html', context)
