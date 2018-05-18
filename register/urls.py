@@ -14,5 +14,5 @@ urlpatterns = [
     path('user_detail/<int:pk>/', views.UserDetail.as_view(), name='user_detail'),
     path('user_update/<int:pk>/', views.UserUpdate.as_view(), name='user_update'),
     # Momotaro
-    path('momtoaro_create/<int:pk>', views.momotaro_create, name='momotaro_create') 
+    path('momotaro_create/<int:pk>', views.momotaro_create, name='momotaro_create') 
 ]

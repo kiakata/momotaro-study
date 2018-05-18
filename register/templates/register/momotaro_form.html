@@ -1,4 +1,5 @@
-{% extends register/base.html %} {% block content %}
+{% extends "register/base.html" %}
+{% block content %}
 <form class="" action="" method="POST">
   <table class="table">
     <tbody>
@@ -19,22 +20,12 @@
         <td>{{ user.address }}</td>
       </tr>
       <!-- これより上がユーザー情報で登録されていた項目で、下がここで登録してもらいたい項目 -->
-      <tr>
-        <th>ニックネーム</th>
-        <td>{{ form.goal }}</td>
-      </tr>
-      <tr>
-        <th>期限</th>
-        <td>{{ form.limit }}</td>
-      </tr>
-      <tr>
-        <th>目標を達成したい理由</th>
-        <td>{{ form.reason }}</td>
-      </tr>
-      <tr>
-        <th>その他自己紹介など自由記入欄</th>
-        <td>{{ form.additional_comments }}</td>
-      </tr>
+      {% for field in form %}
+        <tr>
+          <th><label for="{{ field.id_for_label }}">{{ field.label }}</label></th>
+          <td>{{ field }} {{ field.errors }}</td>
+        </tr>
+      {% endfor %}
     </tbody>
   </table>
 

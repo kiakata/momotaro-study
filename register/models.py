@@ -99,7 +99,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 class Momotaro(models.Model):
     goal = models.CharField('目標', max_length=255 ,null=False)
     limit = models.CharField('期限', max_length=20 ,null=False)
-    reason = models.CharField('目標を設定した理由', max_length=255 ,null=True)
+    reason = models.CharField('目標を達成したい理由', max_length=255 ,null=True)
     additional_comments =  models.TextField('自由記入欄', max_length=500 ,null=True)
     date = models.DateTimeField('作成日', default=timezone.now)
     user = models.OneToOneField(User, on_delete=models.PROTECT)

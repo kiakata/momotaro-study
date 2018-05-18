@@ -8,6 +8,7 @@ from django.views import generic
 from .forms import (
     LoginForm, UserCreateForm, UserUpdateForm, MomotaroCreateForm
     )
+from .models import Momotaro
 
 
 from django.contrib.auth import get_user_model
@@ -119,7 +120,8 @@ class UserUpdate(OnlyYouMixin, generic.UpdateView):
         return resolve_url('register:user_detail', pk=self.kwargs['pk'])
 
 def momotaro_create(request, pk):
-    user = User.object.get(id=pk)
+    model = Momotaro
+    user = User.objects.get(id=pk)
 
     # 送信内容をもとにフォームを作る。POSTでなければからのフォーム
     form = MomotaroCreateForm(request.POST or None)
@@ -129,7 +131,7 @@ def momotaro_create(request, pk):
         form.save()
         return redirect('register:index')
     # 通常時のページアクセスや、入力内容に誤りがあれば、またページを表示
-    content = {
+    context = {
     'form': form
     }
     return render(request, 'register/momotaro_form.html', context)
