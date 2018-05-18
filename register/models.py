@@ -44,7 +44,6 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
     """カスタムユーザーモデル."""
-    user_id = models.IntegerField(null=True)
     email = models.EmailField(_('email address'), unique=True)
     nickname = models.CharField(_('ニックネーム'), max_length=50, blank=True)
     age = models.CharField(_('年代'), max_length=5, blank=True)
